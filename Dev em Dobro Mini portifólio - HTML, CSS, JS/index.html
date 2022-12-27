@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <img {
+      width="60px"
+      height="70px"
+    }>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
+    <link rel="stylesheet" href="./src/css/rolagem.css">
+  
+    <title>Mini Portfólio</title>
+  </head>
+  <body>
+    <main class="cartao">
+      <div class="minhas-informacoes">
+        <img src="Watashi wa.jpeg" alt="foto de perfil" />
+        <h1 class="nome">Nic Rodrigues</h1>
+        <h2 class="cargo">Desenvolvedora Frontend Júnior</h2>
+      </div>
+
+      <div class="conteudo">
+        <ul class="abas">
+          <li class="aba selecionado" id="sobre-mim">
+            <img src="./src/imagens/sobre.gif" alt="ícone de sobre mim" />
+          </li>
+          <li class="aba" id="minhas-redes">
+            <img src="./src/imagens/coracao.gif" alt="ícone de redes sociais" />
+          </li>
+        </ul>
+
+        <div class="informacoes-abas">
+          <div class="informacao selecionado" id="informacao-sobre-mim">
+            <h3 class="sub-titulo">Sobre</h3>
+
+            <div class="descricao">
+              <p>Olá! meu nome é Nicoly, seja bem-vindo(a) ao meu perfil!</p>
+
+              <p>
+                <br> Sou uma pessoa empolgada por tecnologia! Atualmente comecei a colocar em prática essa admiração estudando <span>HTML, CSS e JavaScript</span>. <br> Gosto muito de ir atrás de coisas que me enchem de curiosidade, e pensar sobre o que a tecnologia é e pode ser capaz de fazer me dá motivação para continuar nesse caminho.
+              </p>
+            </div>
+          </div>
+
+          <div class="informacao" id="informacao-minhas-redes">
+            <h3 class="sub-titulo">Minhas redes</h3>
+
+            <ul class="redes-sociais">
+                <li>
+                    <a href="https://docs.google.com/document/d/1y29qJelptW_dI6KlpK9LLGVusSQfaGkfQ6sTuH9CJcM/edit?usp=sharing" target="_blank" class="curriculo">Currículo</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/nicoly-rodrigues-da-silva-76a649234/" target="_blank" class="linkedin">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://github.com/0nicode0" target="_blank" class="github">GitHub</a>
+                </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </main>
+
+    <script src="./src/js/index.js"></script>
+  </body>
+</html>

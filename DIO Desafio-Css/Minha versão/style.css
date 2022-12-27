@@ -1,0 +1,163 @@
+@import url(font.css);
+
+body {
+  background-color: rgb(22, 15, 5);
+}
+
+h2 {
+  font-size: 2rem;
+  color: #f8e432fd;
+  font-weight: bold;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+p {
+  color: white;
+  font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+  margin: 100px auto;
+}
+
+.banner {
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.986)), url('assets/images/fitoterapia\ contatos.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+  padding-top: 60px;
+  border-bottom: 1px solid #9e901480;
+}
+
+.banner .banner-content {
+  color: white;
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+
+.banner .banner-content p {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+.banner h1 {
+  font-size: 2.6rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: transparent;
+  background: -webkit-linear-gradient(#ffffff, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.banner p {
+  font-size: 1.25rem;
+  margin: 16px 0 24px;
+}
+
+.banner .logo {
+  background-color: rgba(17, 4, 4, 0.781);
+  height: 260px;
+  width: 260px;
+  margin: auto;
+  border-radius: 50%;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.banner .logo img {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.banner .banner-content button {
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 16px 32px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  background-color: transparent;
+  border-image: linear-gradient(#47cd3b, #b7b415);
+  border-image-slice: 10;
+  border-radius: 30px;
+}
+
+#course-content {
+  width: 800px;
+  text-align: center;
+}
+
+#course-content .modules-list {
+  margin: 24px 0;
+}
+
+#course-content .modules-list .module {
+  font-size: 20px;  
+  color: white;
+  width: 530px;
+  margin: 0 auto 24px;
+  border: 1px solid #3ce72546;
+  background-color: #2e2c13;
+  padding: 16px;
+  border-radius: 100px;
+  box-shadow: inset -5px 6px 8px rgba(0, 0, 0, .7);
+}
+
+#course-content .modules-list .module span {
+  color: #fffc3e;
+}
+
+#know-us {
+  height: 560px;
+  background-size: cover;
+  background-image: url("assets/images/Sobre\ nós\ imagem\ acima.jpg");
+  background-attachment: fixed;
+  border-top: 1px solid #9e901480;
+  border-bottom: 1px solid #9e901480;
+}
+
+#know-us p {
+  color: #f3ff4b;  
+  font-weight: 900;
+  font-size: 4rem;
+  text-transform: lowercase;
+  max-width: 250px;
+  text-shadow: 3px 2px #070707;
+  padding: 200px 20vh 0px;
+}
+
+#professional-challenges {
+  text-align: center;
+  width: 800px;
+}
+
+#professional-challenges img {
+  margin: 32px 0;
+}
+
+footer {
+  padding: 20px 0;
+  text-align: center;
+  background-image: linear-gradient(rgba(20, 63, 9, 0.582), rgba(44, 38, 11, 0.2));
+  border-top: 1px solid #9e901480;
+}
+
+footer .logo {
+  width: 160px;
+}
+
+footer a {
+  color: #dbd833;
+  font-weight: bold;
+}

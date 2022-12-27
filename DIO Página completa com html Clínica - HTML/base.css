@@ -1,0 +1,44 @@
+html,
+.wrapper{
+    font-family: Comic Sans MS;
+    background-color: rgb(27, 19, 17);
+    display: flex;
+    margin: 0 auto;
+}
+
+.main {
+    flex-flow: column;
+    width: 80%;
+    align-self:center;
+    display: flex;
+    margin: 0 auto;
+  }
+.menu {
+    background-color:rgb(27, 19, 17);
+    width: 20%;
+    padding: 30px 40px 0px;
+  }
+.header {
+    width: 1260px;
+    min-height: 550px;
+    background-color: rgba(35, 78, 7, 0.932);
+    padding: 15px 15px 0px;
+  }
+.content {
+    width: 1200px;
+    padding: 45px;
+    background-color: rgb(252, 243, 206);
+    justify-content: center;
+  }
+.footer {
+    width: 1260px;
+    min-height:100px;
+    background-color: rgba(35, 78, 7, 0.733);
+    padding: 0px 15px 0px;
+  }
+
+  .whats{
+    margin: auto;
+    text-align: center;
+    
+  }

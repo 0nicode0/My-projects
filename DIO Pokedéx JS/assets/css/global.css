@@ -1,0 +1,53 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    flex-flow: column;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-repeat: inherit;
+    background-image: linear-gradient(rgba(41, 101, 158, 0), rgba(8, 29, 32, 0.562), rgba(1, 1, 14, 0.322)), url('midias/fundo7.jpeg');
+    background-size: 100vh;
+    display: flex;
+    justify-content: center;
+    scroll-behavior: smooth;
+}
+
+.img1{
+    width: 50vh;
+    height: 200px;
+    margin: auto;
+    display: block;
+    max-width: 60vh; 
+}
+
+
+#header {
+    align-items: center;
+    background-image: linear-gradient(rgba(41, 101, 158, 0), rgba(8, 29, 32, 0.562));
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 169px;
+    margin-bottom: px;
+}
+
+#container {
+    background-color: rgba(22, 37, 39, 0.432);
+
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}

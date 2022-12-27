@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @font-face {
+            font-family: Starjedi;
+            src: url(Starjedi.ttf);
+        }
+
+
+        body {
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 24px;
+            margin-top: 30px;
+        }
+
+        h1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: yellow;
+            font-family: Starjedi;
+        }
+
+        h3 {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: yellow;
+            font-family: Starjedi;
+        }
+        img {
+            size: 300px;
+        }
+
+        .boneco {
+
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .ObiWan {
+            width: 300px;
+        }
+
+        .cabeca {
+            background: #0e0e13;
+            width: 300px;
+            height: 120px;
+            position: absolute;
+            top: 0;
+        }
+
+        .braco-esquerdo {
+            background: #0e0e13;
+            width: 100px;
+            height: 160px;
+            position: absolute;
+            left: 0;
+        }
+
+        .torso {
+            background: #0e0e13;
+            width: 100px;
+            height: 160px;
+            position: absolute;
+            left: 100px;
+        }
+
+        .braco-direito {
+            background: #0e0e13;
+            width: 100px;
+            height: 160px;
+
+            position: absolute;
+            right: 0;
+        }
+
+        .perna-esquerda {
+            background: #0e0e13;
+            width: 155px;
+            height: 160px;
+
+            position: absolute;
+            left: 0;
+            top: 190px;
+        }
+
+        .perna-direita {
+            background: #0e0e13;
+            width: 155px;
+            height: 160px;
+
+            position: absolute;
+            right: 0;
+            top: 190px;
+        }
+
+        .mostrar {
+            background: transparent;
+        }
+
+        .palavra {
+            color: rgb(255, 230, 0);
+            font-size: 42px;
+        }
+
+        .letra {
+            border: 1px solid rgb(255, 230, 0);
+        }
+
+        button {
+            background: rgb(20, 106, 192);
+            color: #ffffff;
+            border: 0;
+            border-radius: 6px;
+            padding: 12px 24px;
+            cursor: pointer;
+        }
+    </style>
+    <title>Jogo da força</title>
+</head>
+
+<body>
+
+    <strong>
+        <h1> ☆ Star Wars ☆</h1>
+        <h3>Qual é o personagem?</h3>
+    </strong>
+    <div class="boneco">
+        <img src="ObiWann.png" class="ObiWan" />
+        <div class="partesDoBoneco cabeca"></div>
+        <div class="partesDoBoneco braco-esquerdo"></div>
+        <div class="partesDoBoneco torso"></div>
+        <div class="partesDoBoneco braco-direito"></div>
+        <div class="partesDoBoneco perna-esquerda"></div>
+        <div class="partesDoBoneco perna-direita"></div>
+    </div>
+
+    <p class="palavra">
+    </p>
+    <button onclick=chutar()><strong>CHUTAR LETRA</strong></button>
+    <img src="driven.png" alt="">
+
+    <script>
+        const partesDoBoneco = Array.from(document.querySelectorAll('.partesDoBoneco'));
+
+        const chutesFeitos = [];
+        const palavra = 'obi wan kenobi';
+        let errosCometidos = 0;
+        const numMaxErros = partesDoBoneco.length;
+
+        mostrarPalavra();
+
+        function mostrarPalavra() {
+            let palavraMostrada = ' ';
+
+            for (let i = 0; i < palavra.length; i = i + 1) {
+
+                if (chutesFeitos.includes(palavra[i])) {
+                    palavraMostrada = palavraMostrada + '<span class="letra">' + palavra[i] + '</span>'
+
+                } else if (palavra[i] === ' ') {
+                    palavraMostrada = palavraMostrada + " ";
+                } else {
+                    palavraMostrada = palavraMostrada + '<span class="letra">_</span>';
+                }
+            }
+            document.querySelector('.palavra').innerHTML = palavraMostrada;
+        }
+
+        function chutar() {
+
+            if (errosCometidos === numMaxErros) {
+                alert("Você perdeu!");
+                return;
+            }
+
+            const chute = prompt("Qual é o seu chute?");
+
+            if (chutesFeitos.includes(chute)) {
+                alert("Essa já foi! Tente uma letra diferente.")
+                return;
+            }
+
+            chutesFeitos.push(chute);
+
+            if (palavra.includes(chute)) {
+                mostrarPalavra();
+            } else {
+                errosCometidos = errosCometidos + 1;
+
+                for (let i = 0; i < errosCometidos; i = i + 1) {
+                    partesDoBoneco[i].classList.add("mostrar");
+                }
+
+                if (errosCometidos === numMaxErros) {
+                    alert("Você perdeu!")
+                } else {
+                    alert("Não foi dessa vez! Tente de novo.");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

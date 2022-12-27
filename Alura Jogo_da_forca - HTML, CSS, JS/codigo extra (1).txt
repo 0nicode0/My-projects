@@ -1,0 +1,83 @@
+código html:
+
+  <div class="boneco">
+    <img src="assets/darth-vader.png" class="darth-vader" />
+    <div class="parte-do-boneco cabeca"></div>
+    <div class="parte-do-boneco braco-esquerdo"></div>
+    <div class="parte-do-boneco torso"></div>
+    <div class="parte-do-boneco braco-direito"></div>
+    <div class="parte-do-boneco perna-esquerda"></div>
+    <div class="parte-do-boneco perna-direita"></div>
+  </div>
+
+código css:
+
+    .boneco {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      position: relative;
+    }
+
+    .darth-vader {
+      width: 300px;
+    }
+
+    .cabeca {
+      background: #0e0e13;
+      width: 300px;
+      height: 120px;
+
+      position: absolute;
+      top: 0;
+    }
+
+    .braco-esquerdo {
+      background: #0e0e13;
+      width: 100px;
+      height: 160px;
+
+      position: absolute;
+      left: 0;
+    }
+
+    .torso {
+      background: #0e0e13;
+      width: 100px;
+      height: 160px;
+
+      position: absolute;
+      left: 100px;
+    }
+
+    .braco-direito {
+      background: #0e0e13;
+      width: 100px;
+      height: 160px;
+
+      position: absolute;
+      right: 0;
+    }
+
+    .perna-esquerda {
+      background: #0e0e13;
+      width: 155px;
+      height: 160px;
+
+      position: absolute;
+      left: 0;
+      top: 190px;
+    }
+
+    .perna-direita {
+      background: #0e0e13;
+      width: 155px;
+      height: 160px;
+
+      position: absolute;
+      right: 0;
+      top: 190px;
+    }
