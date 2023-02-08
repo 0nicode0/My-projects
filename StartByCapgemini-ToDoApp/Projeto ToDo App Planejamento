@@ -1,0 +1,66 @@
+Projeto Desenvolvido no Curso de Lógica de Programação
+
+ToDo App
+
+Descrição:
+Aplicação para o gerenciamento de projetos e as tarefas envolvidas nesses projetos.
+
+Objetivo:
+Resolver a questão de organização de tarefas de um ou vários projetos.
+
+Entidades:
+*Projeto;
+  - Nome
+  - Descrição
+  - Data de criação 
+  - Data de Atualização
+*Tarefa;
+  - Nome
+  - Descrição
+  - Status
+  - Observações
+  - Prazo 
+  - Data de criação
+  - Data de atualização
+
+Requisistos: 
+* Permitir criar o Projeto;
+* Permitir aleterar o Projeto;
+* Permitir deletar o Projeto;
+
+* Permitir criar a Tarefa;
+* Permitir alterar a Tarefa;
+* Permitir deletar a Tarefa;
+
+Regras de negócio: 
+* Não irá conter um sistema de login;
+* Não haverá conceito de usuário;
+* Toda tarefa deve pertencer a um projeto;
+
+Tecnologias utilizadas: 
+* Java
+* MySql
+
+------------------------------------------------------------------------
+
+** Passo a passo **
+
+- Criação do banco de daods (OK)
+- Criação das classes de modelo (OK)
+- Criação da conexão com o banco de dados (OK)
+- Criação das classes de controle (Acesso aos dadso do banco)
+- Criação das interfaces gráficas
+  - Criação da tela principal
+    - Criação do CellRederer Prazo
+    - Criação do CellRederer Editar e Deletar
+  - Criação da tela de Cadastro de Projeto
+  - Criação da tela de Cadastro de Tarefa
+- Implementação do eventos
+  - Validações
+- Ajustes finais
+- Teste da aplicação      
+
+
+
+
+
